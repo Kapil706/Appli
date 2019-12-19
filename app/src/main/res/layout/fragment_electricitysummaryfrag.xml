@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.electricitysummaryfrag"
+    android:orientation="vertical"
+    android:background="#afd4c7c7"
+    android:paddingBottom="20dp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATE "
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:background="#bfffffff" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        android:background="#84ffffff"
+        android:padding="2dp"/>
+
+
+        <LinearLayout
+            android:background="#bcffffff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FD180101"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Time :"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_weight="1"
+                android:textColor="#100006"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="KWH :"/>
+
+        <TextView
+            android:id="@+id/KWH"
+            android:layout_weight="1"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Difference KWH :"/>
+
+        <TextView
+            android:id="@+id/diffKWH"
+            android:layout_weight="1"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="KVAH :"/>
+
+        <TextView
+            android:id="@+id/KVAH"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Difference KVAH :"/>
+
+        <TextView
+            android:id="@+id/diffKVAH"
+            android:layout_weight="1"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Calculated PF :"/>
+
+        <TextView
+            android:id="@+id/CALPF"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+           android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Meter  PF :"/>
+
+        <TextView
+            android:id="@+id/MPF"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Panel  PF :"/>
+
+        <TextView
+            android:id="@+id/PF"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount11"
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Amount@ :"/>
+
+        <TextView
+            android:id="@+id/amount1"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="3dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#bcffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount21"
+            android:textColor="#FD180101"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Amount@ :"/>
+
+        <TextView
+            android:id="@+id/amount2"
+            android:textColor="#100006"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/overwrite"
+            android:padding="15dp"
+            android:text="overwrite"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</FrameLayout>

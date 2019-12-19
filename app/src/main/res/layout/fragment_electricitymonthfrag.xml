@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.electricitymonthfrag"
+    android:orientation="vertical"
+    android:background="#bcffffff">
+
+    <FrameLayout
+        android:padding="10dp"
+        android:background="#8A000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+
+
+    </FrameLayout>
+
+
+    <GridView
+        android:id="@+id/electricitylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:columnWidth="110dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="3dp"
+        android:stretchMode="spacingWidthUniform"
+        android:paddingBottom="10dp"
+        />
+
+
+</LinearLayout>
